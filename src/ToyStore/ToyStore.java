@@ -4,12 +4,7 @@ package ToyStore;
 //www.apluscompsci.com
 //Name -
 
-import java.util.Scanner;
-import java.util.List;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import static java.lang.System.*;
 
 public class ToyStore
 {
@@ -47,9 +42,9 @@ public class ToyStore
   
   	public Toy getThatToy( String nm )
   	{
-            for (int n=0;n<toyList.size();n++){
-                if( nm.equals(toyList.get(n).getName())){
-                    return toyList.get(n);
+            for (Toy toyList1 : toyList) {
+                if (nm.equals(toyList1.getName())) {
+                    return toyList1;
                 }
             }
   	return null;
